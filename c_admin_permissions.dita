@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//IBM//DTD DITA IBM Concept//EN"
+ "ibm-concept.dtd">
+<?Pub Inc?>
+<concept id="c_admin_permission" xml:lang="en-us">
+<title>Permissions</title>
+<titlealts>
+<navtitle>Permissions</navtitle>
+<searchtitle>Permissions</searchtitle>
+</titlealts>
+<shortdesc>Permissions are one of the cornerstones of security by controlling user access.
+Permissions determine the tasks that users can perform. Depending on the responsibilities of the
+user, you can restrict or broaden the tasks that they can perform.</shortdesc>
+<prolog>
+<metadata>
+<keywords>
+<indexterm>permissions</indexterm>
+</keywords>
+<?Pub Caret 9?>
+</metadata>
+</prolog>
+<conbody>
+<p>Permissions are not assigned directly to users which is what gives flexibility in your
+environment. Instead, permissions are granted through a set of defined roles. Roles are assigned to
+users within a team. This model allows you to give a user a set of permissions for one team that is
+different from the set given to the same user on another team.  A person or group might have
+different responsibilities for the different teams they are members.</p>
+<p>The interlocking concept of teams, roles, and permissions ensures that users have the appropriate
+permissions to perform their work and not affect processes outside of their assigned scope. The
+interaction of these three concepts provides the mechanisms to create an infrastructure that is
+secure and flexible.</p>
+<p> Permissions give users access to tasks limited to the following categories:<ul>
+<li>Pipelines</li>
+<li>Releases</li>
+<li>Teams</li>
+<li>Product</li>
+</ul></p>
+<p>
+<table frame="all" rowsep="1" colsep="1" id="table_zxt_drn_gfb">
+<title>Permissions and scopes</title>
+<tgroup cols="3">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="newCol2" colnum="2" colwidth="1.5*"/>
+<colspec colname="c2" colnum="3" colwidth="1.46*"/>
+<thead>
+<row>
+<entry>Area</entry>
+<entry>Description</entry>
+<entry>Permission</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="4">Pipelines</entry>
+<entry morerows="4">Permissions in this category are limited to tasks related to pipelines.</entry>
+<entry>Create pipelines</entry>
+</row>
+<row>
+<entry>Assign pipeline access to teams</entry>
+</row>
+<row>
+<entry>Configure applications</entry>
+</row>
+<row>
+<entry>Configure environments</entry>
+</row>
+<row>
+<entry>Create and assign approvals</entry>
+</row>
+<row>
+<entry morerows="11">Releases</entry>
+<entry morerows="11">Permissions in this category are limited to tasks related to releases.</entry>
+<entry>Create tasks</entry>
+</row>
+<row>
+<entry>Run tasks</entry>
+</row>
+<row>
+<entry>Schedule tasks</entry>
+</row>
+<row>
+<entry>Create calendar events</entry>
+</row>
+<row>
+<entry>Run calendar events</entry>
+</row>
+<row>
+<entry>Define, modify, and remove calendar settings</entry>
+</row>
+<row>
+<entry>Create release templates</entry>
+</row>
+<row>
+<entry>Create and remove approvals</entry>
+</row>
+<row>
+<entry>Assign approvals</entry>
+</row>
+<row>
+<entry>Assign and remove members to teams</entry>
+</row>
+<row>
+<entry>Modify team member role assignment</entry>
+</row>
+<row>
+<entry/>
+</row>
+<row>
+<entry morerows="2">Team</entry>
+<entry morerows="2">Permissions are restricted to teams in which the user is currently a
+member.</entry>
+<entry>Add members </entry>
+</row>
+<row>
+<entry>Change permissions for any users in the team except one"'s own</entry>
+</row>
+<row>
+<entry>Change permissions for any users in the team except one"'s own</entry>
+</row>
+<row>
+<entry morerows="2">Product</entry>
+<entry morerows="2"/>
+<entry>Configure integrations.</entry>
+</row>
+<row>
+<entry>Modify team members</entry>
+</row>
+<row>
+<entry>Modify permissions</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</p>
+<!--Several permissions can be controlled at the global level.  There are several permissions that can be granted or denied at the global level. Setting these permissions affect all users and have implications that you must consider before setting.<p><b>Global administrator vs team administrator...ADD DESCRIPTION</b>.</p><section><title>Creation of local users</title><p><b>Why do I want to use this setting? What are considerations for setting?</b></p><p>Most users that are given access to product features are authenticated using LDAP or SSO. However, there may be reasons to add users not authenticated through either LDAP or SSO. For example. xxxxxx</p><p>When adding local users, you are responsible for authenticating the users. </p></section><section><title>Self-service team creations</title><p><b>Who is being allowed to create a team? Why is this useful?</b></p></section>-->
+<!--<section><title>Read only view</title><p>Users can be restricted to view only releases and pipelines for teams that they are not a member.</p><p><b>what if I don't enable this options?</b></p></section>-->
+</conbody>
+</concept>
